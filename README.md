@@ -45,7 +45,7 @@ fn foo() {
 | otherwise | if over 10 lines, full |
 
 
-## 发版标准 LPS-2
+## 版本发布标准 LPS-2
 
 ### 合并 LPS-2000
 
