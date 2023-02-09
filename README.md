@@ -1,6 +1,8 @@
 # Limit Lab Practice Standard - Limit实验室实践标准
 
-## 审核标准 LPS-1
+## 开发与审核标准 LPS-1
+
+适用于开发活动与审核。审核时需保证需需审核内容完全遵循 LPS-1 标准。
 
 ### 编码约定 LPS-1000
 
