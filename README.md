@@ -2,7 +2,7 @@
 
 ## 审核标准 LPS-1
 
-### 编码约定 LSP-1000
+### 编码约定 LPS-1000
 
 #### 格式化 LPS-1001: Format
 
@@ -35,13 +35,13 @@ fn foo() {
 
 ## 发版标准 LPS-2
 
-### 合并 LSP-2000
+### 合并 LPS-2000
 
 #### 合并小提交 LPS-2001: Merge Small Commit
 
 在发布对应版本前，需使用 `git rebase -i` 合并针对于同功能修改的小提交
 
-### 测试 LSP-2100
+### 测试 LPS-2100
 
 #### 测试覆盖率 LPS-2101: Test Coverage
 
