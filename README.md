@@ -18,7 +18,21 @@
 
 ##### LPS-1001: Large Function
 
-除此之外还需要将超越长度超越特定行数的函数或方法执行拆分，如无法拆分需要在函数或方法前使用注释标注 `large function`。
+除此之外还需要将超越长度超越特定行数的函数或方法执行拆分，如无法拆分需要在函数或方法前使用注释标注 `FIXME: large function`。
+
+| LANG   | LINES |
+| ------ | ----- |
+| Elixir | 20    |
+| Rust   | 30    |
+
+E.g.
+
+```rust
+// FIXME: large function
+fn foo() {
+    // 35 lines of code
+}
+```
 
 
 ## 发版标准
