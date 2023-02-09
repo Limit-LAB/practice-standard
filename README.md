@@ -1,4 +1,4 @@
-# Limit Lab Practice Standard - Limit实验室实践标准
+# Limit Lab Practice Standard - Limit 实验室实践标准
 
 ## 开发与审核标准 LPS-1
 
