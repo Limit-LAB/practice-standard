@@ -25,14 +25,14 @@
 | LANG   | LINES |
 | ------ | ----- |
 | Elixir | 20    |
-| Rust   | 30    |
+| Rust   | 40    |
 
 E.g.
 
 ```rust
 // FIXME: large function
 fn foo() {
-    // 35 lines of code
+    // 45 lines of code
 }
 ```
 
