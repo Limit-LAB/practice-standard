@@ -101,3 +101,33 @@ const ComponentA: FC<PropsWithChildren<{ name: string }>> = props => {
 ## CSS
 
 1. 一个项目中最好只使用一种样式方案，如 `tailwind` 或 `CSS Modules` 不要混用。
+
+2. 不要使用任何方式拼接 CSS 类名，对于 `tailwind` 项目，可以使用 `tailwind-merge`，对于其他样式方案，可以使用 `clsx`，如果能拿到 DOM 节点，请使用 `classList`。
+
+```tsx
+// True ✅
+import { twJoin } from 'tailwind-merge'
+
+export const ComponentA = props => {
+    const className = twJoin('text-color-500', props.className)
+    return <div className={className}></div>
+}
+
+// True ✅
+import clsx from 'clsx'
+
+export const ComponentA = props => {
+    const className = clsx('homepage__button', props.className)
+    return <div className={className}></div>
+}
+
+// True ✅  
+const button = document.querySelector('.homepage__button')
+button.classList.add('text-color-500')
+
+// False ❌
+export const ComponentA = props => {
+    const className = 'text-color-500' + ` ${props.className}`
+    return <div className={className}></div>
+}
+```
