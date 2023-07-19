@@ -174,6 +174,19 @@ export const ComponentA = props => {
 }
 ```
 
+### 版本管理约定 LPS-1100
+
+#### 分支名 LPS-1101
+
+分支名应当全部使用形如 `{category}/{name}` 的名字，其中 `category` 为此分支对应的类型，同 commit 类型（`feat`, `fix`, `refactor`）等，`name` 为此分支的主题，如 `card`, `pipeline` 等。
+
+- True ✅
+  - `feat/pipeline`
+  - `refactor/card`
+- False ❌
+  - `lemon-nb`
+  - `tHiSiSsOmEbRaNcH`
+
 ## 版本发布标准 LPS-2
 
 ### 合并 LPS-2000
